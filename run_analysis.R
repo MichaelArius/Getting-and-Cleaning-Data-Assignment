@@ -227,6 +227,10 @@ grouped_data
 write.csv(grouped_data, "tidy_dataset.csv")
 # Saving the grouped_data data frame into a .csv file for easy further analysis.
 
+write.table(grouped_data, "tidy_dataset.txt", row.name = F)
+# Saving the grouped_data data frame into a .txt file for easy further analysis
+# according to the requirements that I read after I clicked submit assignment...
+
 # For Peers Who Are Marking This Assignment -------------------------------
 
 # Question 1 is answered in Step 3: Merging the test and train datasets into one.
