@@ -1,5 +1,14 @@
+# Step 0: Downloading and unzipping the UCI HAR dataset -------------------
+
+download.file(
+    "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",
+    "Human Activity Recognition using Smartphones.zip"
+)
+unzip("Human Activity Recognition using Smartphones.zip")
+
 # Step 1: Tidying the test dataset -----------------------------------------
 
+require(dplyr, purrr)
 subject <- read.table("./UCI HAR Dataset/test/subject_test.txt")
 data <- read.table("./UCI HAR Dataset/test/X_test.txt")
 activity <- read.table("./UCI HAR Dataset/test/y_test.txt")
@@ -168,7 +177,7 @@ col.names
 length(col.names)
 head(col.names)
 tail(col.names)
-# 81 names, starting with "subject" and "activity" and ending with 
+# 81 names, starting with "subject" and "activity" and ending with
 # "530 fBodyBodyGyroMag-std()" and "543 fBodyBodyGyroJerkMag-std()", as expected.
 
 combined.mean.sd <- setNames(combined.mean.sd, col.names)
