@@ -5,6 +5,6 @@
 <font size="5"> 
 1. README.md <br>
 2. run_analysis.R: this is the R script file that cleans and analyzes the UCI HAR Dataset to create an independent data frame in accordance to the requirements of Question 5. <br>
-3. CodeBook.md: this is the markdown file that describes all the variables in the data frame created in Question 5 and lists the steps that were taken to make the data frame from the data provided in the UCI HAR Dataset.
+3. CodeBook.md: this is the markdown file that describes all the variables in the data frame created in Question 5 and lists the steps that were taken to make the data frame from the data provided in the UCI HAR Dataset. <br>
 4. tidy_dataset.csv: the tidy dataset created in Question 5 in .csv format.
 </font>
