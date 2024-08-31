@@ -224,6 +224,9 @@ grouped_data
 # measurement for each activity and each subject, according to the requirements of
 # question 5.
 
+write.csv(grouped_data, "tidy_dataset.csv")
+# Saving the grouped_data data frame into a .csv file for easy further analysis.
+
 # For Peers Who Are Marking This Assignment -------------------------------
 
 # Question 1 is answered in Step 3: Merging the test and train datasets into one.
